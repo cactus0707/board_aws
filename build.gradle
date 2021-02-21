@@ -25,7 +25,15 @@ repositories {
 }
 
 dependencies {
+    //롬복 디펜던시 추가
     compile('org.projectlombok:lombok')
+    //웹프로그렘 돌리기위한 디펜던시 추가 //
     compile('org.springframework.boot:spring-boot-starter-web')
+    //Spring boot용 Spring Data Jpa 디펜던시 ( JPA -> hibernate -> Spring Data Jpa 로 추상화시킨걸로 이해 중
+    //래퍼 클래스 같은걸로 대충 이해중 //
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    //인메모리 디비 H2 테스트용.
+    compile('com.h2database:h2')
+    //응 ~ 너는 테스트야 //
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
