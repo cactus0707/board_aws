@@ -9,10 +9,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-@Getter
-@NoArgsConstructor
-@Entity
+// 엔티티 클래스는 테이블과 매핑이 되고, 세터를 쓰지 않는다 - 세터가 필요한 로직의 클래스에서 새터 하도록
+//-> 잠깐 생각만 해봐도 엔티티에서 세터를 제공하게되면 여러 로직에서 맘대로 새터 부른다고 생각하면 콜스택 개판될거 뻔하다고 예상함.
+@Getter // 롬복 어노테이션 클래스 안의 모든필드의 Getter 자동생성 //
+@NoArgsConstructor //롬복 어노테이션 - 기본생성자 자동추가 public Post(){}
+@Entity //JPA어노테이션
 
 public class Posts {
     @Id
