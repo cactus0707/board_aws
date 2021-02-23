@@ -5,10 +5,10 @@ Overview 성격 프로젝트
 
 #Env
 Java 8
-Spring Boot 2.1.x
+Spring Boot 2.1.7
 Gradle4
 
-#version up 필요
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjA4NTIxMF19
+eyJoaXN0b3J5IjpbLTIxMzQwNjg0NV19
 -->
