@@ -34,6 +34,10 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
 }
 // RDB에서 애트리뷰트와 PK부분이 JPA를 통해 추상화가 된 것 같다.(@ID-유일값부분) FK부분이 궁금해지고 RDB는 보나마나 BCNF 해놨을 건데
 // 어떻게 SQL문을 생성하는지, 성능 이슈는 없다곤 하는데 쿼리플랜을 어떻게 생각하고 어떻게 적용 됬을지, 찾아봐야 한다.
